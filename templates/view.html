@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block script %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'view.js') }}"></script>  
+<script>
+    var id_num = {{id_num|tojson}}
+</script>
+{% endblock %}
+
+{% block content %}
+<div class="row name">{{player_name}}</div>
+<div class="row">
+    <div class="col-md-4 picture">
+        <img src="{{player_picture}}" width="400mm" alt="image not available">
+    </div>
+    <div class="col-md-8">
+        <div class="row">{{player_description}}</div>
+        <div class="row">Role: {{player_role}}</div>
+        <div class="row">Age: {{player_age}}</div>
+        <div class="row">Teams played on: {{player_teams}}</div>
+    </div>
+</div>
+
+<div class="row">
+    <button id="edit">Edit</button>
+</div>
+{% endblock %}

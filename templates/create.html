@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script type="text/javascript" src="{{ url_for('static', filename = 'create.js') }}"></script>
+    <style>
+        #warning {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                Player name: 
+                <input id="name" placeholder="name">
+            </div>
+            <div class="col-md-4">
+                Player role: 
+                <input id="role" placeholder="role">
+            </div>
+            <div class="col-md-4">
+                Player description: 
+                <input id="description" placeholder="description">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                Player age: 
+                <input id="age" placeholder="121">
+            </div>
+            <div class="col-md-4">
+                Player teams: 
+                <input id="teams" placeholder="C9">
+            </div>
+            <div class="col-md-4">
+                Player image link: 
+                <input id="image" placeholder="www.">
+            </div>
+        </div>
+        <br>
+        <div class="submit_section">
+            <button id="submit">Submit</button>
+        </div>
+    </div>
+</body>
+</html>

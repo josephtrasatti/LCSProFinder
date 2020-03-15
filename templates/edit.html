@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script type="text/javascript" src="{{ url_for('static', filename = 'edit.js') }}"></script>
+    <style>
+        #warning {
+            background-color: pink;
+        }
+    </style>
+    <script>
+        var id_num = {{id_num|tojson}}
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            Current age: {{player_age}}
+            <input id="new_age" placeholder="new age">
+        </div>
+        <br>
+        <div class="row">
+            <button id="submit">Submit</button>
+            <button id="discard">Discard Changes</button>
+        </div>
+    </div>
+</body>
+</html>

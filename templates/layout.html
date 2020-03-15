@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Find League Players Home Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  {% block script %}
+
+  {% endblock %}
+  <style>
+    .header_image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    #warning {
+        background-color: pink;
+    }
+    .delete_player {
+        background-color: red;
+    }
+    .card-img-top {
+        width: 200px;
+        height: 160px;
+        object-fit: cover;
+        object-position: center;
+        overflow: hidden;
+    }
+    .card {
+      border: 1px solid black;
+      margin: 12px;
+      width: 360px;
+      text-align: center;
+      background-color: lightgray;
+      border-radius: 25%;
+      cursor: pointer;
+    }
+    .card:hover {
+      background-color: gray;
+    }
+    #search {
+      width: 800px;
+      margin-top: 7px;
+    }
+    .name {
+      border: 1px solid black;
+      text-align: center;
+      font-size: 30;
+    }
+    .picture {
+      border: 1px solid black;
+      text-align: center;
+    }
+    .block {
+      background-color: lightgray;
+    }
+</style>
+</head>
+<body class="block">
+
+  <div>
+    <img class="header_image" src="https://nexus.leagueoflegends.com/wp-content/uploads/2020/01/Web-Header_iaztplumu31evg5aqehk.jpg" alt="Header Image">
+  </div>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://127.0.0.1:5000/">League Finder PRO</a>
+      </div>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" name="player" type="text" placeholder="player" aria-label="Search" id="search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="submit_button">Search</button>
+      </form>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    {% block content %}
+
+    {% endblock %}
+  </div>
+
+
+</body>
+</html>
