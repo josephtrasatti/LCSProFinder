@@ -470,18 +470,39 @@ def edit(id):
 			player_age = player["age"]
 	return render_template('edit.html', player_age=player_age, id_num=id_num)
 
-@app.route('/edit/update_age', methods=['GET', 'POST'])
+@app.route('/view/update_role',  methods=['GET', 'POST'])
+def update_role():
+	global players
+	json_data = request.get_json()
+	new_role = json_data["new_role"]
+	id = int(json_data["id"])
+	for player in players:
+		if id == player["id"]:
+			player["role"] = new_role
+	return jsonify(player=player)
+
+@app.route('/view/update_age',  methods=['GET', 'POST'])
 def update_age():
 	global players
 	json_data = request.get_json()
 	new_age = json_data["new_age"]
-	id_num = json_data["id_num"]
-
+	id = int(json_data["id"])
 	for player in players:
-		if player["id"] == id_num:
+		if id == player["id"]:
 			player["age"] = new_age
+	return jsonify(player=player)
 
-	return jsonify(id_num=id_num)
+@app.route('/view/update_teams',  methods=['GET', 'POST'])
+def update_teams():
+	global players
+	json_data = request.get_json()
+	new_teams = json_data["new_teams"]
+	id = int(json_data["id"])
+	for player in players:
+		if id == player["id"]:
+			player["teams"] = new_teams
+	return jsonify(player=player)
+
 
 if __name__ == '__main__':
 	app.run(debug = True)
