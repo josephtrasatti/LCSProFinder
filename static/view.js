@@ -3,7 +3,12 @@ $(document).ready(function(){
         event.preventDefault()
         search = $("#search").val()
         window.location = '/?player=' + search
-      });
+    });
+
+    $("#create_button").click(function(){
+        event.preventDefault()
+        window.location = '/create'
+    })
 
     $("#edit_role").click(function() {
         $("#role_text").html('<b>Role: </b><input id="new_role" placeholder="' + player_role + '">')

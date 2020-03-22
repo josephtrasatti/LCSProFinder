@@ -1,4 +1,15 @@
 $(document).ready(function(){
+    $("#submit_button").click(function(){
+        event.preventDefault()
+        search = $("#search").val()
+        window.location = '/?player=' + search
+    });
+
+    $("#create_button").click(function(){
+        event.preventDefault()
+        window.location = '/create'
+    })
+
     $("#submit").click(function(){
         $("#warning").remove()
         if ($("#name").val() == '' || $("#role").val() == '' || $("#description").val() == '' ||

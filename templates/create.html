@@ -1,54 +1,52 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+{% extends "layout.html" %}
 
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+{% block script %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'create.js') }}"></script>
+{% endblock %}
 
-    <script type="text/javascript" src="{{ url_for('static', filename = 'create.js') }}"></script>
-    <style>
-        #warning {
-            background-color: pink;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
+{% block content %}
+<div class="row header_name">
+    <h2>
+        <b>Player name: </b><input type="text" id="name">
+    </h2>
+</div>
+<div class="row">
+    <div class="col-md-6 picture_div">
+        <!-- <img class="picture" src="{{player_picture}}" alt="image not available"> -->
+        <b>Picture URL: </b><input type="text" id="image">
+    </div>
+    <div class="col-md-6">
         <div class="row">
-            <div class="col-md-4">
-                Player name: 
-                <input id="name" placeholder="name">
-            </div>
-            <div class="col-md-4">
-                Player role: 
-                <input id="role" placeholder="role">
-            </div>
-            <div class="col-md-4">
-                Player description: 
-                <input id="description" placeholder="description">
+            <div class="col-md-8">
+                <div class="row info_box no-gutters" id="role_text">
+                    <b>Role: </b><input type="text" id="role">
+                </div>
             </div>
         </div>
-        <br>
         <div class="row">
-            <div class="col-md-4">
-                Player age: 
-                <input id="age" placeholder="121">
-            </div>
-            <div class="col-md-4">
-                Player teams: 
-                <input id="teams" placeholder="C9">
-            </div>
-            <div class="col-md-4">
-                Player image link: 
-                <input id="image" placeholder="www.">
+            <div class="col-md-8">
+                <div class="row info_box no-gutters" id="age_text">
+                    <b>Age: </b><input type="text" id="age">
+                </div>
             </div>
         </div>
-        <br>
-        <div class="submit_section">
-            <button id="submit">Submit</button>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row info_box no-gutters" id="teams_text">
+                    <b>Teams: </b><input type="text" id="teams">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="info_box">
+                <b>Description: </b><input type="text" id="description">
+            </div>
         </div>
     </div>
-</body>
-</html>
+    <div class="row submit_section">
+        <button id="submit">Submit</button>
+    </div>
+</div>
+
+{% endblock %}
+

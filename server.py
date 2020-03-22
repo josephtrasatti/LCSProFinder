@@ -18,6 +18,7 @@ players = [
 		"age": 25,
 		"teams": "CLG, TSM, TL",
 		"picture": "https://lolstatic-a.akamaihd.net/esports-assets/production/player/doublelift-igod502r.png",
+		"scene": "pro",
 	},
 	{
 		"id": 2,
@@ -29,6 +30,7 @@ players = [
 		"age": 26,
 		"teams": "TSM, IMT, FLY",
 		"picture": "https://gamepedia.cursecdn.com/lolesports_gamepedia_en/7/79/FLY_WildTurtle_2020_Split_1.png",
+		"scene": "pro",
 	},
 	{
 		"id": 3,
@@ -41,6 +43,7 @@ players = [
 		"age": 25,
 		"teams": "C9",
 		"picture": "https://gamepedia.cursecdn.com/lolesports_gamepedia_en/3/32/2019_Allstars_Sneaky.png",
+		"scene": "pro",
 	},
 	{
 		"id": 4,
@@ -52,6 +55,7 @@ players = [
 		"age": 27,
 		"teams": "Curse",
 		"picture": "https://gamepedia.cursecdn.com/lolesports_gamepedia_en/0/07/NA_Voyboy_2018_AS.png",
+		"scene": "retired_pro",
 	},
 	{
 		"id": 5,
@@ -65,6 +69,7 @@ players = [
 		"age": 27,
 		"teams": "SKT",
 		"picture": "https://gamepedia.cursecdn.com/lolesports_gamepedia_en/7/71/T1_Faker_2020_Split_1.png",
+		"scene": "pro",
 	},
 	{
 		"id": 6,
@@ -77,6 +82,7 @@ players = [
 		"age": 23,
 		"teams": "CLG TL",
 		"picture": "https://www.esportspedia.com/lol/images/2/22/FLY_Pobelter_2019_Summer.png",
+		"scene": "pro",
 	},
 	{
 		"id": 7,
@@ -88,6 +94,7 @@ players = [
 		"age": 24,
 		"teams": "SKT C9 TL",
 		"picture": "https://www.esportspedia.com/lol/thumb.php?f=C9-Impact-2017.png&width=227",
+		"scene": "pro",
 	},
 	{
 		"id": 8,
@@ -99,9 +106,10 @@ players = [
 		"age": 24,
 		"teams": "TSM",
 		"picture": "https://gamepedia.cursecdn.com/lolesports_gamepedia_en/9/98/TSM_Bjergsen_2020_Split_1.png",
+		"scene": "pro",
 	},
 	{
-		"id": 10,
+		"id": 9,
 		"player": "Imaqtpie",
 		"role": "ADC",
 		"description": "The meme legend - the best ADC in the world. QTPie is a former pro player who was just too "
@@ -110,9 +118,10 @@ players = [
 		"age": 30,
 		"teams": "Dignitas",
 		"picture": "https://gamepedia.cursecdn.com/lolesports_gamepedia_en/1/11/NA_Imaqtpie_2018_AS.png",
+		"scene": "retired_pro",
 	},
 	{
-		"id": 11,
+		"id": 10,
 		"player": "XPeke",
 		"role": "Mid",
 		"description": "The man literally has a move named after him. So many iconic moments and great plays."
@@ -121,9 +130,10 @@ players = [
 		"age": 27,
 		"teams": "Fnatic",
 		"picture": "https://lolstatic-a.akamaihd.net/esports-assets/production/player/xpeke-8f3dmcvw.png",
+		"scene": "pro",
 	},
 	{
-		"id": 12,
+		"id": 11,
 		"player": "Meteos",
 		"role": "JG",
 		"description": "Although born in Massachusetts, Meteos' hometown is actually Fairfax, Virginia. "
@@ -134,21 +144,10 @@ players = [
 		"age": 26,
 		"teams": "C9",
 		"picture": "https://gamepedia.cursecdn.com/lolesports_gamepedia_en/0/09/100_Meteos_2020_Split_1.png",
-	},
-		{
-		"id": 9,
-		"player": "Scarra",
-		"role": "Mid, JG",
-		"description": "William \"scarra\" Li is a League of Legends esports player, currently streamer for Offline TV. "
-					   "He is best known for being the mid laner for Team Dignitas. He is now the owner and coach of "
-					   "Dignitas and has done wonders for the team. He is also known for his time in the "
-					   "amateur league on the stream dream team.",
-		"age": 30,
-		"teams": "Dignitas",
-		"picture": "https://lolstatic-a.akamaihd.net/esports-assets/production/player/scarra-5x01i56g.png",
+		"scene": "retired_pro",
 	},
 	{
-		"id": 13,
+		"id": 12,
 		"player": "Zven",
 		"role": "ADC",
 		"description": "He started playing video games with World of Warcraft at the age of 12. "
@@ -159,6 +158,20 @@ players = [
 		"age": 22,
 		"teams": "TSM C9",
 		"picture": "https://www.esportspedia.com/lol/images/4/4a/TSM_Zven_2019_Summer.png",
+		"scene": "pro",
+	},
+	{
+		"id": 13,
+		"player": "Scarra",
+		"role": "Mid, JG",
+		"description": "William \"scarra\" Li is a League of Legends esports player, currently streamer for Offline TV. "
+					   "He is best known for being the mid laner for Team Dignitas. He is now the owner and coach of "
+					   "Dignitas and has done wonders for the team. He is also known for his time in the "
+					   "amateur league on the stream dream team.",
+		"age": 30,
+		"teams": "Dignitas",
+		"picture": "https://lolstatic-a.akamaihd.net/esports-assets/production/player/scarra-5x01i56g.png",
+		"scene": "retired_pro",
 	},
 	{
 		"id": 14,
@@ -169,6 +182,7 @@ players = [
 		"age": 22,
 		"teams": "SG IMT SKT FNC CG DIG",
 		"picture": "https://www.esportspedia.com/lol/images/b/bd/CG_Huni_2019_Spring.png",
+		"scene": "pro",
 	},
 	{
 		"id": 15,
@@ -181,6 +195,7 @@ players = [
 		"age": 26,
 		"teams": "EF OG GG DIG",
 		"picture": "https://gamepedia.cursecdn.com/lolesports_gamepedia_en/9/9b/DIG_Froggen_2020_Split_1.png",
+		"scene": "pro",
 	},
 	{
 		"id": 16,
@@ -194,6 +209,7 @@ players = [
 		"age": 28,
 		"teams": "CLG TL IMT",
 		"picture": "https://www.esportspedia.com/lol/images/4/4a/TL_Xmithie_2019_Spring.png",
+		"scene": "pro",
 	},
 	{
 		"id": 17,
@@ -206,18 +222,7 @@ players = [
 		"age": 25,
 		"teams": "C9 TL",
 		"picture": "https://www.esportspedia.com/lol/images/d/d4/TL_Jensen_2019_Spring.png",
-	},
-	{
-		"id": 17,
-		"player": "Jensen",
-		"role": "Mid",
-		"description": "Jensen is a Danish player who is currently playing on TL in NA. He has made it to worlds "
-					   "almost every season he has played. Jensen has amazing mechanics but even better "
-					   "team play. He has many more years ahead of him and hopes to one day hold the "
-					   "champion trophy.",
-		"age": 25,
-		"teams": "C9 TL",
-		"picture": "https://www.esportspedia.com/lol/images/d/d4/TL_Jensen_2019_Spring.png",
+		"scene": "pro",
 	},
 	{
 		"id": 18,
@@ -230,6 +235,7 @@ players = [
 		"age": 22,
 		"teams": "CLG FLY",
 		"picture": "https://www.esportspedia.com/lol/images/7/7b/CLG_PowerOfEvil_2019_Summer.png",
+		"scene": "pro",
 	},
 	{
 		"id": 19,
@@ -242,6 +248,7 @@ players = [
 		"age": 22,
 		"teams": "SKT EG",
 		"picture": "https://www.esportspedia.com/lol/images/4/47/100_Bang_2019_Spring.png",
+		"scene": "pro",
 	},
 	{
 		"id": 20,
@@ -254,6 +261,7 @@ players = [
 		"age": 22,
 		"teams": "TSM FLY",
 		"picture": "https://gamepedia.cursecdn.com/lolesports_gamepedia_en/a/a7/NRG_Santorin_2016_Summer.png",
+		"scene": "pro",
 	},
 	{
 		"id": 21,
@@ -266,6 +274,7 @@ players = [
 		"age": 21,
 		"teams": "Providence College",
 		"picture": "https://pbs.twimg.com/media/Dx9Lom3V4AAwoNR.jpg",
+		"scene": "collegiate",
 	},
 	{
 		"id": 22,
@@ -278,6 +287,7 @@ players = [
 		"age": 21,
 		"teams": "Providence College",
 		"picture": "https://gamepedia.cursecdn.com/lolesports_gamepedia_en/thumb/9/92/Doopty.jpeg/1200px-Doopty.jpeg",
+		"scene": "collegiate",
 	},
 	{
 		"id": 23,
@@ -290,6 +300,7 @@ players = [
 		"age": 21,
 		"teams": "Providence College",
 		"picture": "https://news.providence.edu/files/2019/10/mcguanweb-714x1024.jpg",
+		"scene": "collegiate",
 	},
 	{
 		"id": 24,
@@ -301,6 +312,7 @@ players = [
 		"age": 21,
 		"teams": "Providence College",
 		"picture": "https://news.providence.edu/files/2019/10/monterrozaweb-696x1024.jpg",
+		"scene": "collegiate",
 	},
 	{
 		"id": 25,
@@ -313,6 +325,8 @@ players = [
 		"age": 20,
 		"teams": "Providence College",
 		"picture": "https://news.providence.edu/files/2019/10/mimsweb-678x1024.jpg",
+
+		"scene": "collegiate",
 	},
 	{
 		"id": 26,
@@ -325,6 +339,7 @@ players = [
 		"age": 26,
 		"teams": "Dignitas",
 		"picture": "https://gamepedia.cursecdn.com/lolesports_gamepedia_en/1/1c/NRG_Kiwikid_2016_Summer.png",
+		"scene": "retired_pro",
 	},
 	{
 		"id": 27,
@@ -338,6 +353,7 @@ players = [
 		"age": 26,
 		"teams": "Dignitas CLG",
 		"picture": "https://gamepedia.cursecdn.com/lolesports_gamepedia_en/1/1c/NRG_Kiwikid_2016_Summer.png",
+		"scene": "pro",
 	},
 	{
 		"id": 28,
@@ -350,6 +366,7 @@ players = [
 		"age": 26,
 		"teams": "Curse",
 		"picture": "https://gamepedia.cursecdn.com/lolesports_gamepedia_en/f/fd/TS_Quas_2017_Summer.png",
+		"scene": "retired_pro",
 	},
 	{
 		"id": 29,
@@ -362,10 +379,11 @@ players = [
 		"age": 29,
 		"teams": "Curse",
 		"picture": "https://gamepedia.cursecdn.com/lolesports_gamepedia_en/a/a5/TL_IWDominate_2016_Spring.png",
+		"scene": "retired_pro",
 	},
 	{
 		"id": 30,
-		"player": "	",
+		"player": "Aphromoo",
 		"role": "Supp",
 		"description": "Aphromoo played on several teams starting in 2011. He began to gain recognition as the AD "
 					   "Carry player of v8 eSports, where he played with PhantomL0rd, Muffinqt, and Unstoppable, "
@@ -377,6 +395,7 @@ players = [
 		"age": 27,
 		"teams": "CLG DIG",
 		"picture": "https://gamepedia.cursecdn.com/lolesports_gamepedia_en/a/ac/DIG_aphromoo_2020_Split_1.png",
+		"scene": "pro",
 	},
 ]
 
@@ -389,7 +408,7 @@ def home():
 	search = request.args.get('player')
 	
 	if not search:
-		return render_template('home.html', matches=players[:10])
+		return render_template('home.html', matches=players[:12])
 
 	players_found = []
 	

@@ -1,30 +1,31 @@
 $(document).ready(function(){
 
     display_players()
-    console.log("test")
 
     $("#submit_button").click(function(){
         event.preventDefault()
         search = $("#search").val()
         window.location = '/?player=' + search
-      });
+    });
 
+    $("#create_button").click(function(){
+        event.preventDefault()
+        window.location = '/create'
+    })
 })
 
 
 var display_players = function() {
 
-    for (var i = 0; i < players.length; i += 3) {
+    for (var i = 0; i < players.length; i += 4) {
 
-        player_row = players.slice(i, i+3)
-
-        console.log(player_row)
+        player_row = players.slice(i, i+4)
 
         const new_row = $('<div class="row"></div>')
 
         new_row.html(player_row.map(player => (
             `
-            <div class="card col-md-4" onclick="location.href='/view/${player.id}'">
+            <div class="card col-md-3" onclick="location.href='/view/${player.id}'">
                 <img class="card-img-top" src="${player.picture}" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">${player.player}</h5>
