@@ -4,13 +4,18 @@
 <script type="text/javascript" src="{{ url_for('static', filename = 'home.js') }}"></script>  
 <script>
   var players = {{matches|tojson}}
+  var last_search = {{search|tojson}}
 </script>
 {% endblock %}
 
 {% block content %}
 
-<div class="row" id="mission">  
-  <span>We are here to help YOU find the greatest league players of all time!</span>
+<div class="row" id="mission">
+  <img src="https://upload.wikimedia.org/wikipedia/en/b/b5/League_of_Legends_logo_2019.png" alt="League of Legends Logo ">
+  <br>
+  <div class="mission_box">
+    <b>Find your favorite pro players and learn interesting facts about thier life and professional history!</b>
+  </div>
 </div>
 <div class="container" id="display_players">
 

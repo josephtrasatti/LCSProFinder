@@ -16,11 +16,10 @@
       height: 125px;
       object-fit: cover;
     }
-    #warning {
-        background-color: pink;
-    }
     .delete_player {
-        background-color: red;
+        background-color: gray;
+        position: absolute;
+        left: 0;
     }
     .card-img-top {
         width: 200px;
@@ -37,7 +36,7 @@
       background-color: #AAA;
       cursor: pointer;
     }
-    .card:hover {
+    .card-img-top:hover {
       background-color: #666;
     }
     #search {
@@ -49,6 +48,16 @@
       text-align: center;
       background-color: white;
     }
+    .picture_div_create {
+      border: 1px solid black;
+      text-align: center;
+      background-color: white;
+      height: 300px;
+      bottom: 0;
+    }
+    .create_input {
+      width: 100%;
+    }
     .picture {
       width: 100%;
     }
@@ -57,6 +66,14 @@
     }
     .info_box {
       background-color: white;
+      margin: 10px;
+      border-radius: 15px;
+      margin-bottom: 25px;
+      padding: 10px;
+      padding-right: 30px;
+    }
+    .mission_box {
+      background-color: #AAA;
       margin: 10px;
       border-radius: 15px;
       margin-bottom: 25px;
@@ -85,6 +102,21 @@
       border-radius: 15px;
       margin-bottom: 20px;
       margin-top: -5px;
+    }
+    #submit_create {
+      width: 200px;
+    }
+    .submit_section {
+      text-align: center;
+    }
+    #mission {
+      text-align: center;
+    }
+    .delete_team {
+      position: absolute;
+      right: 10px;
+      height: 25px;
+      background-color: #AAA;
     }
 </style>
 </head>

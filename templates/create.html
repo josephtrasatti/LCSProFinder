@@ -5,47 +5,53 @@
 {% endblock %}
 
 {% block content %}
-<div class="row header_name">
+<div class="row header_name" id="name_section">
     <h2>
         <b>Player name: </b><input type="text" id="name">
     </h2>
 </div>
-<div class="row">
-    <div class="col-md-6 picture_div">
-        <!-- <img class="picture" src="{{player_picture}}" alt="image not available"> -->
-        <b>Picture URL: </b><input type="text" id="image">
+<div class="row info_box" id="image_section">
+    <div class="col-md-2">
+        <b>Picture URL: </b>
     </div>
-    <div class="col-md-6">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="row info_box no-gutters" id="role_text">
-                    <b>Role: </b><input type="text" id="role">
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-8">
-                <div class="row info_box no-gutters" id="age_text">
-                    <b>Age: </b><input type="text" id="age">
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-8">
-                <div class="row info_box no-gutters" id="teams_text">
-                    <b>Teams: </b><input type="text" id="teams">
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="info_box">
-                <b>Description: </b><input type="text" id="description">
-            </div>
-        </div>
+    <div class="col-md-10">
+        <input type="text" id="image" class="create_input">
     </div>
-    <div class="row submit_section">
-        <button id="submit">Submit</button>
+</div>
+<div class="row info_box" id="role_section">
+    <div class="col-md-2">
+        <b>Role: </b>
     </div>
+    <div class="col-md-10">
+        <input type="text" id="role" class="create_input">
+    </div>
+</div>
+<div class="row info_box" id="age_section">
+    <div class="col-md-2">
+        <b>Age: </b>
+    </div>
+    <div class="col-md-10">
+        <input type="text" id="age" class="create_input">
+    </div>
+</div>
+<div class="row info_box" id="team_section">
+    <div class="col-md-2">
+        <b>Teams: </b>
+    </div>
+    <div class="col-md-10">
+        <input type="text" id="team" class="create_input">
+    </div>
+</div>
+<div class="row info_box" id="description_section">
+    <div class="col-md-2">
+        <b>Description: </b>
+    </div>
+    <div class="col-md-10">
+        <input type="text" id="description" class="create_input">
+    </div>
+</div>
+<div class="row submit_section">
+    <button id="submit_create">Submit</button>
 </div>
 
 {% endblock %}

@@ -10,11 +10,41 @@ $(document).ready(function(){
         window.location = '/create'
     })
 
-    $("#submit").click(function(){
-        $("#warning").remove()
-        if ($("#name").val() == '' || $("#role").val() == '' || $("#description").val() == '' ||
-        $("#age").val() == '' || $("#team").val() == '' || $("#image").val() == '') {
-            make_warning("all fields must have input")
+    $("#submit_create").click(function(){
+        if ($("#name").val().trim() == '' || $("#role").val().trim() == '' || $("#description").val().trim() == '' ||
+        $("#age").val().trim() == '' || $("#team").val().trim() == '' || $("#image").val().trim() == '') {
+            //Check each one - make backround light red if not filled in
+            if ($("#name").val().trim() == '') {
+                $("#name_section").css('background-color', 'pink')
+                const warning = $('<p>Name field cannot be blank</p>')
+                $("#name_section").append(warning)
+            }
+            if ($("#role").val().trim() == '') {
+                $("#role_section").css('background-color', 'pink')
+                const warning = $('<p>Role field cannot be blank</p>')
+                $("#role_section").append(warning)
+            }
+            if ($("#description").val().trim() == '') {
+                $("#description_section").css('background-color', 'pink')
+                const warning = $('<p>Description field cannot be blank</p>')
+                $("#description_section").append(warning)
+            }
+            if ($("#age").val().trim() == '') {
+                $("#age_section").css('background-color', 'pink')
+                const warning = $('<p>Age field cannot be blank</p>')
+                $("#age_section").append(warning)
+            }
+            if ($("#team").val().trim() == '') {
+                $("#team_section").css('background-color', 'pink')
+                const warning = $('<p>Team field cannot be blank</p>')
+                $("#team_section").append(warning)
+            }
+            if ($("#image").val().trim() == '') {
+                $("#image_section").css('background-color', 'pink')
+                const warning = $('<p>Image field cannot be blank</p>')
+                $("#image_section").append(warning)
+            }
+
         }
         else {
             new_player = {
@@ -22,18 +52,13 @@ $(document).ready(function(){
                 "player_role": $("#role").val(),
                 "player_description": $("#description").val(),
                 "player_age": $("#age").val(),
-                "player_teams": $("#teams").val(),
+                "player_teams": $("#team").val(),
                 "player_image": $("#image").val(),
             }
             create_player(new_player)
         } 
       });
 })
-
-function make_warning(blank) {
-    const warning = $('<div id="warning">' + blank + '</div>')
-    $(".submit_section").append(warning)
-}
 
 var create_player = function(new_player) {
     $.ajax({

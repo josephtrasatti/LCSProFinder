@@ -16,7 +16,7 @@ players = [
 					   "less than to be desired. He has NEVER made it out of groups, but I believe, Doublelift will "
 					   "save the world.",
 		"age": 25,
-		"teams": "CLG, TSM, TL",
+		"teams": [{"team": "CLG", "deleted": False,}, {"team": "TSM", "deleted": False,}, {"team": "TL", "deleted": False,}],
 		"picture": "https://lolstatic-a.akamaihd.net/esports-assets/production/player/doublelift-igod502r.png",
 		"scene": "pro",
 	},
@@ -28,7 +28,7 @@ players = [
 					   "Wildturtle is a humble player, who always puts his team first. He has been a staple on every"
 					   "team he plays on, known for both his consistency and play making ability. He is a fan favorite.",
 		"age": 26,
-		"teams": "TSM, IMT, FLY",
+		"teams": [{"team": "TSM", "deleted": False,}, {"team": "IMT", "deleted": False,}, {"team": "FLY", "deleted": False,}],
 		"picture": "https://gamepedia.cursecdn.com/lolesports_gamepedia_en/7/79/FLY_WildTurtle_2020_Split_1.png",
 		"scene": "pro",
 	},
@@ -41,9 +41,10 @@ players = [
 					   "of the people. He is also known for his ability to discover bugs, as well as his meme "
 					   "knowledge.",
 		"age": 25,
-		"teams": "C9",
+		"teams": [{"team": "C9", "deleted": False,},],
 		"picture": "https://gamepedia.cursecdn.com/lolesports_gamepedia_en/3/32/2019_Allstars_Sneaky.png",
 		"scene": "pro",
+		"deleted": False,
 	},
 	{
 		"id": 4,
@@ -53,9 +54,10 @@ players = [
 					   "were unmatched. Voyboy has done many charity events and has one of the biggest hearts of anyone."
 					   "His laugh is contagious, and his skills are outrageous.",
 		"age": 27,
-		"teams": "Curse",
+		"teams": [{"team": "Curse", "deleted": False,}],
 		"picture": "https://gamepedia.cursecdn.com/lolesports_gamepedia_en/0/07/NA_Voyboy_2018_AS.png",
 		"scene": "retired_pro",
+		"deleted": False,
 	},
 	{
 		"id": 5,
@@ -67,9 +69,10 @@ players = [
 					   "recourse's to him. He also managers to be a selfless player at the same time as he "
 					   "carries the team on his back.",
 		"age": 27,
-		"teams": "SKT",
+		"teams": [{"team": "SKT", "deleted": False,}],
 		"picture": "https://gamepedia.cursecdn.com/lolesports_gamepedia_en/7/71/T1_Faker_2020_Split_1.png",
 		"scene": "pro",
+		"deleted": False,
 	},
 	{
 		"id": 6,
@@ -80,9 +83,10 @@ players = [
 					   "for doing a lot with little recourse's, making him a very valuable asset to the team. Any team"
 					   "would be lucky to pick him us as their star mid laner.",
 		"age": 23,
-		"teams": "CLG TL",
+		"teams": [{"team": "CLG", "deleted": False,}, {"team": "TL", "deleted": False,}],
 		"picture": "https://www.esportspedia.com/lol/images/2/22/FLY_Pobelter_2019_Summer.png",
 		"scene": "pro",
+		"deleted": False,
 	},
 	{
 		"id": 7,
@@ -92,9 +96,10 @@ players = [
 					   " but big plays. He can play any top laner in any meta. Impact has an amazing work ethic and "
 					   "he constantly strives for improvement.",
 		"age": 24,
-		"teams": "SKT C9 TL",
+		"teams": [{"team": "SKT", "deleted": False,}, {"team": "C9", "deleted": False,}, {"team": "TL", "deleted": False,}],
 		"picture": "https://www.esportspedia.com/lol/thumb.php?f=C9-Impact-2017.png&width=227",
 		"scene": "pro",
+		"deleted": False,
 	},
 	{
 		"id": 8,
@@ -104,9 +109,10 @@ players = [
 					   " almost every year, and has played well internationally too. Bjerg is a legend amoung men"
 					   " and his reign is far from over. One day, he will make it to the grand stage.",
 		"age": 24,
-		"teams": "TSM",
+		"teams": [{"team": "TSM", "deleted": False,}],
 		"picture": "https://gamepedia.cursecdn.com/lolesports_gamepedia_en/9/98/TSM_Bjergsen_2020_Split_1.png",
 		"scene": "pro",
+		"deleted": False,
 	},
 	{
 		"id": 9,
@@ -116,9 +122,10 @@ players = [
 					   "good for the game. So he quit and become the most entertaining streamer on twitch."
 					   "He makes millions a year but deserves billions. ",
 		"age": 30,
-		"teams": "Dignitas",
+		"teams": [{"team": "DIG", "deleted": False,}],
 		"picture": "https://gamepedia.cursecdn.com/lolesports_gamepedia_en/1/11/NA_Imaqtpie_2018_AS.png",
 		"scene": "retired_pro",
+		"deleted": False,
 	},
 	{
 		"id": 10,
@@ -128,9 +135,10 @@ players = [
 					   "It pains me to speak so highly of a EU player, but it is truly deserved."
 					   "Fnatic has made itself a legacy thanks to his work, and his end is no where near to come.",
 		"age": 27,
-		"teams": "Fnatic",
+		"teams": [{"team": "FNC", "deleted": False,}],
 		"picture": "https://lolstatic-a.akamaihd.net/esports-assets/production/player/xpeke-8f3dmcvw.png",
 		"scene": "pro",
+		"deleted": False,
 	},
 	{
 		"id": 11,
@@ -142,9 +150,10 @@ players = [
 					   "a degree in Computer Science. When the beta for LoL came out, Meteos and his "
 					   "friends only played normal games.",
 		"age": 26,
-		"teams": "C9",
+		"teams": [{"team": "C9", "deleted": False,}],
 		"picture": "https://gamepedia.cursecdn.com/lolesports_gamepedia_en/0/09/100_Meteos_2020_Split_1.png",
 		"scene": "retired_pro",
+		"deleted": False,
 	},
 	{
 		"id": 12,
@@ -156,9 +165,10 @@ players = [
 					   "He is still currently in school, as he strives to become a computer programmer in the future."
 					   "He had a very tough first season in NA, however, he is performing better on C9 this year.s",
 		"age": 22,
-		"teams": "TSM C9",
+		"teams": [{"team": "TSM", "deleted": False,}, {"team": "C9", "deleted": False,}],
 		"picture": "https://www.esportspedia.com/lol/images/4/4a/TSM_Zven_2019_Summer.png",
 		"scene": "pro",
+		"deleted": False,
 	},
 	{
 		"id": 13,
@@ -169,9 +179,10 @@ players = [
 					   "Dignitas and has done wonders for the team. He is also known for his time in the "
 					   "amateur league on the stream dream team.",
 		"age": 30,
-		"teams": "Dignitas",
+		"teams": [{"team": "DIG", "deleted": False,}],
 		"picture": "https://lolstatic-a.akamaihd.net/esports-assets/production/player/scarra-5x01i56g.png",
 		"scene": "retired_pro",
+		"deleted": False,
 	},
 	{
 		"id": 14,
@@ -180,9 +191,11 @@ players = [
 		"description": "Huni started his career on Samsung Gaming and made a big debut. After playing on SKT, he "
 					   "decided to move to NA for those sweet deals. ",
 		"age": 22,
-		"teams": "SG IMT SKT FNC CG DIG",
+		"teams": [{"team": "SG", "deleted": False,}, {"team": "IMT", "deleted": False,}, {"team": "SKT", "deleted": False,},
+		 {"team": "FNC", "deleted": False,}, {"team": "CG", "deleted": False,}, {"team": "DIG", "deleted": False,},],
 		"picture": "https://www.esportspedia.com/lol/images/b/bd/CG_Huni_2019_Spring.png",
 		"scene": "pro",
+		"deleted": False,
 	},
 	{
 		"id": 15,
@@ -193,9 +206,11 @@ players = [
 					   "allowed him to play with the best. Mechanics and lane dominance are two aspects of Froggen’s "
 					   "gameplay that he believes will set him above the rest, and secure victories for his team.",
 		"age": 26,
-		"teams": "EF OG GG DIG",
+		"teams": [{"team": "EF", "deleted": False,}, {"team": "OG", "deleted": False,}, {"team": "GG", "deleted": False,},
+		 {"team": "DIG", "deleted": False,},],
 		"picture": "https://gamepedia.cursecdn.com/lolesports_gamepedia_en/9/9b/DIG_Froggen_2020_Split_1.png",
 		"scene": "pro",
+		"deleted": False,
 	},
 	{
 		"id": 16,
@@ -207,9 +222,10 @@ players = [
 					   "began at the age of 6, originally playing on the famicom before moving on to the Gameboy and "
 					   "then PlayStation 1.",
 		"age": 28,
-		"teams": "CLG TL IMT",
+		"teams": [{"team": "CLG", "deleted": False,}, {"team": "TL", "deleted": False,}, {"team": "IMT", "deleted": False,}],
 		"picture": "https://www.esportspedia.com/lol/images/4/4a/TL_Xmithie_2019_Spring.png",
 		"scene": "pro",
+		"deleted": False,
 	},
 	{
 		"id": 17,
@@ -220,9 +236,10 @@ players = [
 					   "team play. He has many more years ahead of him and hopes to one day hold the "
 					   "champion trophy.",
 		"age": 25,
-		"teams": "C9 TL",
+		"teams": [{"team": "C9", "deleted": False,}, {"team": "TL", "deleted": False,}],
 		"picture": "https://www.esportspedia.com/lol/images/d/d4/TL_Jensen_2019_Spring.png",
 		"scene": "pro",
+		"deleted": False,
 	},
 	{
 		"id": 18,
@@ -233,9 +250,10 @@ players = [
 					   "Taunus gymnasium. Prior to playing competitively, he had aspirations of becoming a pilot and "
 					   "flying internationally.",
 		"age": 22,
-		"teams": "CLG FLY",
+		"teams": [{"team": "CLG", "deleted": False,}, {"team": "FLY", "deleted": False,}],
 		"picture": "https://www.esportspedia.com/lol/images/7/7b/CLG_PowerOfEvil_2019_Summer.png",
 		"scene": "pro",
+		"deleted": False,
 	},
 	{
 		"id": 19,
@@ -246,9 +264,10 @@ players = [
 					   "perform as well since he has moved to NA. Hopefully, Bang will be able to make his glorious"
 					   "comeback once again.",
 		"age": 22,
-		"teams": "SKT EG",
+		"teams": [{"team": "SKT", "deleted": False,}, {"team": "EG", "deleted": False,}],
 		"picture": "https://www.esportspedia.com/lol/images/4/47/100_Bang_2019_Spring.png",
 		"scene": "pro",
+		"deleted": False,
 	},
 	{
 		"id": 20,
@@ -259,9 +278,10 @@ players = [
 					   "very good Counter Strike player. His League of Legends career started when he was searching "
 					   "for something new, after he got tired of Counter Strike, this was part way through season 2.",
 		"age": 22,
-		"teams": "TSM FLY",
+		"teams": [{"team": "TSM", "deleted": False,}, {"team": "FLY", "deleted": False,}],
 		"picture": "https://gamepedia.cursecdn.com/lolesports_gamepedia_en/a/a7/NRG_Santorin_2016_Summer.png",
 		"scene": "pro",
+		"deleted": False,
 	},
 	{
 		"id": 21,
@@ -272,9 +292,10 @@ players = [
 					   "his team into battle routinely. Traslinky, while low on the rank ladder, competed and beat "
 					   "many far above him. His skills know no bounds. ",
 		"age": 21,
-		"teams": "Providence College",
+		"teams": [{"team": "PC", "deleted": False,}],
 		"picture": "https://pbs.twimg.com/media/Dx9Lom3V4AAwoNR.jpg",
 		"scene": "collegiate",
+		"deleted": False,
 	},
 	{
 		"id": 22,
@@ -285,9 +306,10 @@ players = [
 					   "with challengers and beat them. His yorik was unstoppable, and his legacy is forever. Doopty "
 					   "was on PC's original roster, some say thier best.",
 		"age": 21,
-		"teams": "Providence College",
+		"teams": [{"team": "PC", "deleted": False,}],
 		"picture": "https://gamepedia.cursecdn.com/lolesports_gamepedia_en/thumb/9/92/Doopty.jpeg/1200px-Doopty.jpeg",
 		"scene": "collegiate",
+		"deleted": False,
 	},
 	{
 		"id": 23,
@@ -298,9 +320,10 @@ players = [
 					   "his mechanical abilities however his game knowledge often lacked. Though he made up for it "
 					   "with communication and hard work.",
 		"age": 21,
-		"teams": "Providence College",
+		"teams": [{"team": "PC", "deleted": False,}],
 		"picture": "https://news.providence.edu/files/2019/10/mcguanweb-714x1024.jpg",
 		"scene": "collegiate",
+		"deleted": False,
 	},
 	{
 		"id": 24,
@@ -310,9 +333,10 @@ players = [
 					   "being an absolute force in the game. Her skills are sharp and her game play is even "
 					   "sharper. Idette studies computer science and grew up in Providence.",
 		"age": 21,
-		"teams": "Providence College",
+		"teams": [{"team": "PC", "deleted": False,}],
 		"picture": "https://news.providence.edu/files/2019/10/monterrozaweb-696x1024.jpg",
 		"scene": "collegiate",
+		"deleted": False,
 	},
 	{
 		"id": 25,
@@ -323,10 +347,11 @@ players = [
 					   "and he has a great team mindset. Mims is a great gift to Providence College, and his "
 					   "skills will not go unused.",
 		"age": 20,
-		"teams": "Providence College",
+		"teams": [{"team": "PC", "deleted": False,}],
 		"picture": "https://news.providence.edu/files/2019/10/mimsweb-678x1024.jpg",
 
 		"scene": "collegiate",
+		"deleted": False,
 	},
 	{
 		"id": 26,
@@ -337,9 +362,10 @@ players = [
 					   "the scenes making the calls. Kiwi will go down as not only a meme king, but the baron "
 					   "play call GOD.",
 		"age": 26,
-		"teams": "Dignitas",
+		"teams": [{"team": "DIG", "deleted": False,}],
 		"picture": "https://gamepedia.cursecdn.com/lolesports_gamepedia_en/1/1c/NRG_Kiwikid_2016_Summer.png",
 		"scene": "retired_pro",
+		"deleted": False,
 	},
 	{
 		"id": 27,
@@ -351,9 +377,10 @@ players = [
 					   "name of Zion Spartan. Zion stands for the little man, but when he presses R on nasus, "
 					   "he is no longer a little man.",
 		"age": 26,
-		"teams": "Dignitas CLG",
+		"teams": [{"team": "DIG", "deleted": False,}, {"team": "CLG", "deleted": False,}],
 		"picture": "https://gamepedia.cursecdn.com/lolesports_gamepedia_en/1/1c/NRG_Kiwikid_2016_Summer.png",
 		"scene": "pro",
+		"deleted": False,
 	},
 	{
 		"id": 28,
@@ -364,9 +391,10 @@ players = [
 					   "his skills. He performed well on curse, but had a tough time finding a new team afterwards. "
 					   "He will always hold a place in our hearts for his underdog story.",
 		"age": 26,
-		"teams": "Curse",
+		"teams": [{"team": "Curse", "deleted": False,}],
 		"picture": "https://gamepedia.cursecdn.com/lolesports_gamepedia_en/f/fd/TS_Quas_2017_Summer.png",
 		"scene": "retired_pro",
+		"deleted": False,
 	},
 	{
 		"id": 29,
@@ -377,9 +405,10 @@ players = [
 					   "there. For that he reason, many teams were hesitant to take the risk on him. Now, Dom streams, "
 					   "and he still rages, and gets banned pretty often.",
 		"age": 29,
-		"teams": "Curse",
+		"teams": [{"team": "Curse", "deleted": False,}],
 		"picture": "https://gamepedia.cursecdn.com/lolesports_gamepedia_en/a/a5/TL_IWDominate_2016_Spring.png",
 		"scene": "retired_pro",
+		"deleted": False,
 	},
 	{
 		"id": 30,
@@ -393,9 +422,10 @@ players = [
 					   "if he switched his role to support; he then joined Counter Logic Gaming as their support "
 					   "player.",
 		"age": 27,
-		"teams": "CLG DIG",
+		"teams": [{"team": "CLG", "deleted": False,}, {"team": "DIG", "deleted": False,}],
 		"picture": "https://gamepedia.cursecdn.com/lolesports_gamepedia_en/a/ac/DIG_aphromoo_2020_Split_1.png",
 		"scene": "pro",
+		"deleted": False,
 	},
 ]
 
@@ -404,19 +434,23 @@ next_id = 31
 @app.route('/')
 def home():
 	global players
+	return render_template('home.html', matches=players[:12], search='@@@@@@@')
+
+	
+
+@app.route('/search')
+def search():
+	global players
 
 	search = request.args.get('player')
-	
-	if not search:
-		return render_template('home.html', matches=players[:12])
 
 	players_found = []
 	
 	for player in players:
-		if search.lower() in player['player'].lower():
+		if (search.lower() in player['player'].lower() or search.lower() in player['role'].lower()):
 			players_found.append(player)
-	
-	return render_template('home.html', matches=players_found)
+	print(search)
+	return render_template('search.html', matches=players_found, search=search.lower())
 
 @app.route('/view/<id>')
 def view_id(id=None):
@@ -520,6 +554,18 @@ def update_teams():
 	for player in players:
 		if id == player["id"]:
 			player["teams"] = new_teams
+	return jsonify(player=player)
+
+@app.route('/mark_as_deleted', methods=['GET', 'POST'])
+def mark_as_deleted():
+	global players
+	json_data = request.get_json()
+	id = int(json_data['id'])
+	team_index = int(json_data['team_index'])
+	for player in players:
+		if player["id"] == id:
+			player["teams"][team_index]["deleted"] = True
+	
 	return jsonify(player=player)
 
 

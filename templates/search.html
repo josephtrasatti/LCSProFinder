@@ -1,8 +1,15 @@
 {% extends "layout.html" %}
 
+{% block script %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'home.js') }}"></script>  
+<script>
+  var players = {{matches|tojson}}
+  var last_search = {{search|tojson}}
+</script>
+{% endblock %}
+
 {% block content %}
-<!-- <script type="text/javascript" src="{{ url_for('static', filename = 'search.js') }}"></script> -->
-<div class=search_results>
-    {{player_name}}
+<div class="container" id="display_players">
+
 </div>
 {% endblock %}
