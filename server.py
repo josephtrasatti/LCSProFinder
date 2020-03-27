@@ -562,9 +562,26 @@ def mark_as_deleted():
 	json_data = request.get_json()
 	id = int(json_data['id'])
 	team_index = int(json_data['team_index'])
+	team = None
 	for player in players:
 		if player["id"] == id:
 			player["teams"][team_index]["deleted"] = True
+			team = player["teams"][team_index]["team"]
+	
+	return jsonify(team=team)
+
+@app.route('/undo_mark_as_deleted', methods=['GET', 'POST'])
+def undo_mark_as_deleted():
+	global players
+	json_data = request.get_json()
+	id = int(json_data['id'])
+	team_name = json_data['team']
+	print(team_name)
+	for player in players:
+		if player["id"] == id:
+			for team in player["teams"]:
+				if team['team'] == team_name:
+					team["deleted"] = False
 	
 	return jsonify(player=player)
 

@@ -63,32 +63,6 @@ $(document).ready(function(){
         $("#age_buttons").append(save)
         $("#age_buttons").append(discard)
     })
-
-    // $("#edit_teams").click(function() {
-    //     teams_input = $('<input id="new_teams" placeholder="' + player_teams + '">')
-    //     teams_input.on("keyup", function(event) {
-    //         console.log('test')
-    //         if (event.keyCode == 13) {
-    //             update_teams()
-    //           }
-    //     })
-    //     $("#teams_text").html('<b>Agew: </b>')
-    //     $("#teams_text").append(teams_input)
-    //     $('#new_teams').focus()
-    //     const save = $('<button id="save_teams" type="button" class="btn btn-outline-primary edit_btn">Save</button>').bind(
-    //         "click", function(){
-    //             update_teams()
-    //           }
-    //     )
-    //     const discard = $('<button id="discard_teams" type="button" class="btn btn-outline-primary edit_btn">Discard</button>').bind(
-    //         "click", function(){
-    //             location.reload()
-    //         }
-    //     )
-    //     $("#teams_buttons").html('')
-    //     $("#teams_buttons").append(save)
-    //     $("#teams_buttons").append(discard)
-    // })
 })
 
 var update_teams = function() {
@@ -157,37 +131,93 @@ var update_role = function(){
       })
   }
 
-  function populate_teams() {
-      for (var i = 0; i < player_teams.length; i++) {
-          if (!player_teams[i].deleted) {
-            const team = $("<div class='col-md-2 info_box'>" + player_teams[i].team + "</div>")
-            const delete_button = $("<button class='btn btn-secondary delete_team' id='delete_" + i + "'>X</button>").bind(
-                "click", function() {
-                    $.ajax({
-                        type: "POST",
-                        url: "/mark_as_deleted",                
-                        dataType : "json",
-                        contentType: "application/json; charset=utf-8",
-                        data : JSON.stringify({
-                            "team_index": $(this).attr("id").substr(7),
-                            "id": id_num,
-                        }),
-                        success: function(result){
-                            location.reload()
-                        },
-                        error: function(request, status, error){
-                            console.log("Error");
-                            console.log(request)
-                            console.log(status)
-                            console.log(error)
-                        }
-                      })
-                }
-            )
-            team.append(delete_button)
-            $("#team_section").append(team)
-          }
+    function populate_teams() {
+        var missing = false
+        for (var i = 0; i < player_teams.length; i++) {
+            if (!player_teams[i].deleted) {
+                const team = $("<div class='col-md-2 info_box' id='" + player_teams[i].team + "'>" + player_teams[i].team + "</div>")
+                const delete_button = $("<button class='btn btn-secondary delete_team' id='delete_" + i + "'>X</button>").bind(
+                    "click", function() {
+                        $.ajax({
+                            type: "POST",
+                            url: "/mark_as_deleted",                
+                            dataType : "json",
+                            contentType: "application/json; charset=utf-8",
+                            data : JSON.stringify({
+                                "team_index": $(this).attr("id").substr(7),
+                                "id": id_num,
+                            }),
+                            success: function(result){
+                                $("#" + result["team"]).remove()
+                                const undo = $("<button id='undo' class='btn btn-secondary undo'>Undo</button>").bind
+                                    (
+                                        "click", function() {
+                                            $.ajax({
+                                                type: "POST",
+                                                url: "/undo_mark_as_deleted",                
+                                                dataType : "json",
+                                                contentType: "application/json; charset=utf-8",
+                                                data : JSON.stringify({
+                                                    "team": result["team"],
+                                                    "id": id_num,
+                                                }),
+                                                success: function(result){
+                                                    location.reload()
+                                                },
+                                                error: function(request, status, error){
+                                                    console.log("Error");
+                                                    console.log(request)
+                                                    console.log(status)
+                                                    console.log(error)
+                                                }
+                                            })
+                                        }
+                                    )
+                                $("#undo").remove()
+                                $("#team_section").append(undo)
+                            },
+                            error: function(request, status, error){
+                                console.log("Error");
+                                console.log(request)
+                                console.log(status)
+                                console.log(error)
+                            }
+                        })
+                    }
+                )
+                team.append(delete_button)
+                $("#team_section").append(team)
+            }
+            // else {
+            //     missing = true
+            // }
       }
+    //   if (missing) {
+    //         const undo = $("<button class='btn btn-secondary undo'>Undo</button>").bind(
+    //             "click", function() {
+    //                 $.ajax({
+    //                     type: "POST",
+    //                     url: "/undo_mark_as_deleted",                
+    //                     dataType : "json",
+    //                     contentType: "application/json; charset=utf-8",
+    //                     data : JSON.stringify({
+    //                         "team_index": $(this).attr("id").substr(7),
+    //                         "id": id_num,
+    //                     }),
+    //                     success: function(result){
+    //                         location.reload()
+    //                     },
+    //                     error: function(request, status, error){
+    //                         console.log("Error");
+    //                         console.log(request)
+    //                         console.log(status)
+    //                         console.log(error)
+    //                     }
+    //                 })
+    //             }
+    //       )
+          
+    //   }
   }
 
 
